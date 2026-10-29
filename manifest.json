@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "CSE Moodle Quick Login",
+  "version": "1.3.0",
+  "description": "Fill your CSE Moodle login with optional local CAPTCHA text recognition.",
+  "permissions": [
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "CSE Moodle Login",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://moodlecse.iitkgp.ac.in/moodle/login/index.php*"
+      ],
+      "js": [
+        "captcha.js",
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

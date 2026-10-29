@@ -1,0 +1,18 @@
+* { box-sizing: border-box; }
+body { width: 350px; margin: 0; padding: 24px; font: 14px/1.5 system-ui, sans-serif; color: #183047; background: #f8fafc; }
+.badge { color: #476881; font-size: 10px; font-weight: 750; letter-spacing: 1.4px; }
+h1 { margin: 7px 0 2px; font-size: 23px; letter-spacing: -.7px; }
+header p { margin: 0 0 21px; color: #61758a; }
+label { display: block; font-weight: 600; margin: 12px 0 5px; }
+input:not([type=checkbox]) { width: 100%; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 7px; font: inherit; background: white; }
+input:focus { outline: 2px solid #4697dd; outline-offset: 2px; }
+.check { display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 500; }
+input[type=checkbox] { accent-color: #145c96; margin: 0; }
+.note, footer { font-size: 11px; color: #61758a; }
+button { cursor: pointer; font: inherit; border-radius: 7px; padding: 10px; border: 0; }
+button[type=submit] { width: 100%; background: #145c96; color: white; font-weight: 650; }
+button:hover { filter: brightness(.94); }
+.actions { display: flex; justify-content: space-between; margin-top: 10px; }
+.actions button { font-size: 12px; background: #e8eef5; color: #183047; }
+#status { min-height: 20px; font-size: 12px; color: #145c66; }
+footer { border-top: 1px solid #dce4ed; padding-top: 12px; }
